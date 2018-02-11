@@ -44,10 +44,11 @@ session_destroy();
             }
         }
     }
-        
+    
+    #handle tamplina matrik (border,kolom,baris)
     function tampilkanMatrik($koefisien){
         echo '<table border="2">';
-        $rows =     count($koefisien);
+        $rows = count($koefisien);
         for($i=0; $i<$rows;$i++){
             $cols = count($koefisien[$i]);
             echo '<tr>';
@@ -61,7 +62,8 @@ session_destroy();
         echo '</table>';
         echo '<hr>';
     }
-           
+    
+    #operasi gauss
     function ubah($persamaan){
       global $koefisien ;
       for($i=0;$i<$persamaan;$i++){
