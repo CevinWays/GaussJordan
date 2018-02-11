@@ -44,7 +44,7 @@ session_destroy();
             }
         }
     }
-           
+        
     function tampilkanMatrik($koefisien){
         echo '<table border="2">';
         $rows =     count($koefisien);
