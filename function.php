@@ -19,7 +19,7 @@ session_destroy();
         kesimpulan($jumlah_persamaan);
     }
     
-    
+    #hasil kesimpulan
     function kesimpulan($jumlah_persamaan){
         global $koefisien ;
         echo 'Sehingga: ' ;
@@ -45,7 +45,7 @@ session_destroy();
         }
     }
     
-    #handle tamplina matrik (border,kolom,baris)
+    #handle tampilan matrik (border,kolom,baris)
     function tampilkanMatrik($koefisien){
         echo '<table border="2">';
         $rows = count($koefisien);
